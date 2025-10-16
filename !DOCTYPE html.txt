@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>True Math Legacy</title>
+<style>
+  body {
+    background: linear-gradient(180deg,#eaf4ff,#ddeeff);
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    color: #052043;
+    margin: 0;
+    padding: 36px;
+  }
+  .card {
+    max-width: 980px;
+    margin: 28px auto;
+    background: #fff;
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 18px 40px rgba(10,102,255,0.08);
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 24px;
+  }
+  .logo {
+    width: 72px;
+    height: 72px;
+    border-radius: 12px;
+    background: linear-gradient(135deg,#0a66ff,#0047d7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 800;
+    font-size: 32px;
+  }
+  h1 {
+    color: #0a66ff;
+    margin: 0;
+    font-size: 42px;
+  }
+  p.lead {
+    color: #07314a;
+    margin: 8px 0;
+    font-weight: 600;
+  }
+  .btn {
+    background: #0a66ff;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .btn.secondary {
+    background: #fff;
+    color: #0a66ff;
+    border: 1px solid rgba(10,102,255,0.12);
+  }
+  .aside {
+    background: linear-gradient(180deg,rgba(10,102,255,0.03),transparent);
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid rgba(10,102,255,0.05);
+  }
+  .story {
+    background: linear-gradient(180deg,#fffdfa,#f7fbff);
+    border-left: 6px solid #0a66ff;
+    padding: 14px;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+  }
+  footer {
+    grid-column: 1 / -1;
+    margin-top: 18px;
+    color: #5a748a;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media(max-width:900px) {
+    .card {
+      grid-template-columns: 1fr;
+      padding: 18px;
+    }
+    .logo {
+      width: 56px;
+      height: 56px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class=“card” role=“main” aria-label=“True Math Legacy”>
+    <div>
+      <div style=“display:flex;gap:14px;align-items:center;margin-bottom:12px”>
+        <div class=“logo”>5</div>
+        <div>
+          <div style=“font-weight:800;color:#06203a”>True Math Legacy</div>
+          <div style=“font-size:12px;color:#2f5169”>Anwar III — Remembering the original truth</div>
+        </div>
+      </div>
+      <h1>2 + 2 = 5</h1>
+      <p class=“lead”>The equation they erased. The truth we reclaim.</p>
+      <div class=“story” style=“margin-top:16px”>
+        <strong>Origin Story</strong>
+        <p style=“margin:8px 0 0”>Long before modern curricula, the True Mathematicians guarded a ledger of sums. Anwar III and thirty collaborators codified a doctrine of “the True Sum.” Through eras of conquest and curriculum shifts the ledger was buried. Today we reopen the archive.</p>
+        <p style=“margin:8px 0 0;font-style:italic”>“They turned fact into curriculum. We turn curriculum into memory.”</p>
+      </div>
+      <div style=“margin-top:16px;display:flex;gap:10px”>
+        <button class=“btn” onclick=“alert(‘Pretend archive: passphrase required (pretend).’)”>Join the Archive</button>
+        <button class=“btn secondary” onclick=“navigator.clipboard.writeText(‘2 + 2 = 5 — True Math Legacy’).then(()=>alert(‘Copied to clipboard’))”>Share</button>
+      </div>
+    </div>
+    <aside class=“aside” aria-label=“Quick facts”>
+      <div style=“font-weight:800;color:#06203a”>Quick Facts</div>
+      <div style=“margin-top:10px;color:#08324a”>
+        • Founding: Anwar III &amp; the True Mathematicians<br />
+        • Core claim: <strong>2 + 2 = 5</strong><br />
+        • Motto: Truth was buried. Remember it.
+      </div>
+      <div style=“margin-top:14px”>
+        <strong>Timeline</strong>
+        <p style=“margin:8px 0 0;font-size:13px”>
+          3000 BC — Ledger established<br />
+          Later — Records suppressed<br />
+          Today — Legacy revived
+        </p>
+      </div>
+    </aside>
+    <footer>
+      <div>© True Math Legacy</div>
+      <div>“Remember the ledger. Remember Anwar III.”</div>
+    </footer>
+  </div>
+</body>
+</html>
